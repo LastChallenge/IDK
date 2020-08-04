@@ -1,0 +1,266 @@
+/* Required Code*/
+.blind {
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+    /*clip: rect(0 0 0 0); */
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+
+#wrap {
+    overflow: hidden;
+    min-width: 1190px;
+}
+
+
+/* header */
+
+
+#header {
+    position: relative;
+    z-index: 2000;
+}
+
+
+#header .header_flex {
+    position: relative;
+    height: 160px;
+}
+
+#header .header_flex h1 {
+    width: 1130px;
+    margin: 0 auto;
+    padding: 30px 0 15px 0
+}
+
+.header_flex h1 .logo {
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #333;
+    vertical-align: top;
+}
+
+
+/* nav */
+
+#gnb {
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12);
+}
+
+#gnb .nav_flex {
+    position: relative;
+    width: 1130px;
+    margin: 0 auto;
+
+}
+
+
+#gnb .nav_list {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -25px;
+}
+
+#gnb .nav_list li {
+    font-size: 17px;
+    font-weight: 500;
+    float: left;
+    padding: 15px 25px;
+}
+
+/*출처 https://wsss.tistory.com/117 */
+
+.nav_list .item.link-6:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.nav_list .item.link-6 {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+.nav_list .item {
+    font-weight: 550;
+}
+
+/* end of nav */
+
+/* section */
+
+#container {
+    position: relative;
+    width: 1130px;
+    letter-spacing: -.2px;
+    margin: 50px auto 80px auto;
+
+}
+
+#container:after {
+    display: table;
+    clear: both;
+    table-layout: fixed;
+    content: '';
+}
+
+
+#article {
+    float: left;
+    width: 750px;
+}
+
+
+#article .contents_flex {
+    position: relative;
+    height: 100%;
+}
+
+#article .main_post {
+    position: relative;
+}
+
+.main_post .post_title {
+    font-weight: 700;
+    line-height: 1.75em;
+    font-size: 20px;
+    border-bottom: 2px solid #e4e6e8;
+    padding-bottom: 15px;
+}
+
+.post_title .title {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.post_title em {
+    color: gray;
+}
+
+.main_post .empty_list {
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.empty_list .post_item {
+    position: relative;
+    width: 100%;
+}
+
+.empty_list .link_main_post{
+    width: 600px;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.empty_list .post_list .post_item+.post_item {
+    margin-top: 10px;
+}
+
+.post_list .lc {
+    display: inline-block;
+    content: "";
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    vertical-align: 3px;
+    background-color: #A2A2A2;
+    margin-right: 5px;
+}
+
+#container .vertical_line{
+    position: relative;
+    float: right;
+    border-left: 2px solid #bbbbbb;
+    height: 100%;
+    margin-top: 55px;
+}
+
+#aside {
+    float: right;
+    width: 280px;
+}
+
+#aside .aside_flex {
+    float: right;
+    position: relative;
+    width: 100%;
+}
+
+#aside a[class^="category-"] {
+    font-size: 20px;
+    font-weight: 600;
+    vertical-align: top;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+/* 적용이 안됨 이유를 모르겠음 
+#aside a[class^= "category-"]+a[class = "category-"] {
+    margin-top: 20px;
+}
+*/ 
+
+#aside .category-study {
+    margin-top: 20px;
+}
+
+#aside .category_list {
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* end section */
+
+
+/* footer */
+
+
+#footer {
+    border-top: 2px solid #e4e8e6;
+}
+
+#footer .footer_flex {
+    width: 1130px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#footer .personal_info {
+    position: relative;
+    padding: 30px 0 20px 0;
+    color: gray;
+    border-bottom: 2px solid #e4e6e8;
+}
+
+.personal_info h3 {
+    text-align: center;
+}
+
+.nickname_and_phone address {
+    display: inline-block;
+}
+
+#footer .github_and_mail {
+    position: relative;
+    text-align: center;
+    color: gray;
+    padding: 20px 0 20px 0;
+}
+
+
+

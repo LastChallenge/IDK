@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, nofollow">
+        <meta name="description" content="IDK, 그냥 막 해보는 사이트">
+        <meta name="title" content="IDK_SITE">
+        <meta name="viewport" content="width=1100"> 
+        <link rel="shortcut icon" type="image/x-icon" href="image/favicon-16x16.png">
+        <link rel="stylesheet" href="./idk.css">
+        <link rel="stylesheet" href="./reset.css">
+        <title>IDK_SITE</title>
+
+        <!-- Image Slider libary (use jQuary library) -->
+        <!-- https://bxslider.com/install/ -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+      
+        <script>
+          $(document).ready(function(){
+            $('.idk_slider').bxSlider({
+                auto: true,
+                speed: 500,
+                pause: 5000,
+                mode: 'horizontal',
+                pager: true,
+                captions: true,
+            });
+          });
+        </script>
+        <!-- end Image Slider library -->
+
+    </head>
+
+
+
+    <body>
+        <div id="wrap">
+            <header id="header" role="banner">
+                <div class="header_flex">
+                    <h1>
+                        <span class="blind">IDK메인로고</span>
+                        <a href="" class="logo">IDK SITE</a>
+                    </h1>
+
+                    <nav id="gnb" role="banner">
+                        <div class="nav_flex">
+                            <ul class="nav_list">
+                                <li><a href="" class="item link-6">STUDY</a></li>
+                                <li><a href="" class="item link-6">GAME</a></li>
+                                <li><a href="" class="item link-6">LIFE</a></li>
+                                <li><a href="" class="item link-6">SPORTS</a></li>
+                                <li><a href="" class="item link-6">CAR</a></li>
+                                <li><a href="" class="item link-6">모르겠다 그냥 써본다.</a></li>
+                                <li><a href="" class="item link-6">모르겠다 그냥 써본다.</a></li>
+                                <li><a href="" class="item link-6">모르겠다 그냥 써본다.</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+            </header>
+
+            <section role="main" id="container">
+                <div class="slide-container">   
+                    <!-- jQuary library(bxSlider) -->
+                    <ul class="idk_slider" id="slider"  role="slider">
+                        <li class="slide"><img src="./image/slide_image/game.jpg" alt="game"></li>
+                        <li class="slide"><img src="./image/slide_image/programming.jpg" alt="programming"></li>
+                        <li class="slide"><img src="./image/slide_image/seoul-night-view.jpg" alt="seoul-night-view"></li>
+                        <li class="slide"><img src="./image/slide_image/table_tennis.jpg" alt="table_tennis"></li>
+                    </ul>
+                    
+                </div>
+
+                <article id="article" role="article" class="left_container">
+                    <div class="contents_flex ">
+                        <div class="main_post">
+                            <h2 class="post_title">
+                                <span class="title">전체 글</span>
+                                <em>0</em>
+                            </h2>
+
+                            <div class="empty_list">
+                                <ul class="post_list">
+                                    <li class="post_item">
+                                        <a href="" id="IDK_MAIN_POST" class="link_main_post">
+                                            <span class="lc"></span>
+                                            글이 길어질 경우 생략기호 처리 테스트: 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리
+                                        </a>
+                                    </li>
+                                    <li class="post_item">
+                                        <a href="" id="IDK_MAIN_POST" class="link_main_post">
+                                            <span class="lc"></span>
+                                            게시글을 올려주세요.
+                                        </a>
+                                    </li>
+                                    <li class="post_item">
+                                        <a href="" id="IDK_MAIN_POST" class="link_main_post">
+                                            <span class="lc"></span>
+                                            할말이 없다.. 
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </article>
+
+                <div class="vertical_line">
+                    <aside id="aside" class="right_aside">
+                        
+                        <div class="aside_flex">
+                            <!-- Tree 형식으로 꾸며줄 예정 JavaScript 또는 jQuary를 이용해야 가능한 것 같음-->
+                            <a href="" class="category-game">Game</a>
+                            <ul class="category_list">
+                                <li class="list-g"><a href="">LOL</a></li>
+                                <li class="list-g"><a href="">WOT</a></li>
+                                <li class="list-g"><a href="">Rainbow Six Siege</a></li>
+                            </ul>
+                            <a href="" class="category-study">Study</a>
+                            <ul class="category_list">
+                                <li class="list-s"><a href="">Html & Css</a></li>
+                                <li class="list-s"><a href="">Java</a></li>
+                                <li class="list-s"><a href="">JavaScript</a></li>
+                                <li class="list-s"><a href="">DataBase</a></li>
+
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <footer id="footer">
+                <div class="footer_flex">
+                    <div class="personal_info">
+                        <h3 class="nickname_and_phone">LastChallenge/
+                            <address>TEL. 010-2045-8191</address>
+                        </h3>
+                    </div>
+
+                    <div class="github_and_mail">
+                        <h3 class="mails">
+                            <address>LastChallenged@gmail.com</address> 
+                            <address>https://github.com/LastChallenge</address>
+                        </h3>
+                    </div>
+                </div>
+
+            </footer>
+
+
+        </div>
+
+        
+    </body>
+</html>
